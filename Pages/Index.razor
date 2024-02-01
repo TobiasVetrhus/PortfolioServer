@@ -1,0 +1,47 @@
+﻿@page "/"
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+@using PortfolioServer.Data
+@using PortfolioServer.Data.Model
+@inject ProjectService ProjectSvc
+@using PortfolioServer.Components
+
+
+<PageTitle>Home</PageTitle>
+
+<div class="container">
+    <img src="/tobias.png" class="round-image" alt="My image" width="200" height="200"/>	
+    <h1 class="main-title">Hi, I'm Tobias 👋🏼</h1>
+</div>
+
+@if (projects == null)
+{
+    <p>No projects..</p>
+}
+else
+{
+    <div class="card-container">
+    @foreach (var project in projects)
+    {
+        <Card Title="@project.ProjectName" Content="@project.ProjectDescription" />
+    }
+    </div>
+}
+
+@code {
+
+    List<Project> projects = new List<Project>();
+
+    protected override async Task OnInitializedAsync() 
+    {
+        try
+        {
+            projects = await HttpClient.GetFromJsonAsync<List<Project>>(NavigationManager.BaseUri + "projects");
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching projects: {ex.Message}, URL: " + NavigationManager.BaseUri + "projects");
+        }
+    }
+}

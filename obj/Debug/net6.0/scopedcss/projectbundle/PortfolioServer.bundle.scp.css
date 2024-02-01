@@ -1,0 +1,218 @@
+/* _content/PortfolioServer/Components/Card.razor.rz.scp.css */
+.card[b-2oxnvdzmfh] {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin: 30px;
+    align-self: stretch;
+  }
+  
+  .card h2[b-2oxnvdzmfh] {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p[b-2oxnvdzmfh] {
+    font-size: 1rem;
+    color: #555555;
+  }
+/* _content/PortfolioServer/Pages/Index.razor.rz.scp.css */
+.container[b-jkqs6sh4fi] {
+    margin-top: 20px;
+    display: flex; /* Default direction is row */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-title[b-jkqs6sh4fi] {
+    margin: 0 50px;
+  }
+  
+  .round-image[b-jkqs6sh4fi] {
+    border-radius: 50%;
+  }
+  
+  .card-container[b-jkqs6sh4fi] {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+  }
+  
+/* _content/PortfolioServer/Shared/MainLayout.razor.rz.scp.css */
+.page[b-veebm97tkr] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-veebm97tkr] {
+    flex: 1;
+}
+
+.sidebar[b-veebm97tkr] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-veebm97tkr] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-veebm97tkr]  a, .top-row .btn-link[b-veebm97tkr] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-veebm97tkr] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-veebm97tkr] {
+        display: none;
+    }
+
+    .top-row.auth[b-veebm97tkr] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-veebm97tkr], .top-row .btn-link[b-veebm97tkr] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-veebm97tkr] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-veebm97tkr] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-veebm97tkr] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-veebm97tkr], article[b-veebm97tkr] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/PortfolioServer/Shared/NavMenu.razor.rz.scp.css */
+.navbar[b-g4tl63h13v] {
+    background-color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .nav-item[b-g4tl63h13v] {
+    font-size: 1.1rem;
+  }
+  
+  .nav-item[b-g4tl63h13v]  .nav-link {
+    color: darkgray;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    width: 100%;
+  }
+  
+  .nav-item[b-g4tl63h13v]  a.active {
+    background-color: rgba(255, 255, 255, 0.37);
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nav-item[b-g4tl63h13v]  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+  }
+  
+  .content[b-g4tl63h13v] {
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+/* .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.oi {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item ::deep a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item ::deep a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item ::deep a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .collapse {
+        display: block;
+    }
+} */

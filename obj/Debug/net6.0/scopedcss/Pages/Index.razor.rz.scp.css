@@ -1,0 +1,21 @@
+.container[b-jkqs6sh4fi] {
+    margin-top: 20px;
+    display: flex; /* Default direction is row */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-title[b-jkqs6sh4fi] {
+    margin: 0 50px;
+  }
+  
+  .round-image[b-jkqs6sh4fi] {
+    border-radius: 50%;
+  }
+  
+  .card-container[b-jkqs6sh4fi] {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+  }
+  
