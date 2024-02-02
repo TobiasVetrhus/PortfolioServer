@@ -1,0 +1,25 @@
+.container[b-twg0i1bgoc] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .programming-container[b-twg0i1bgoc] {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .programming-container div[b-twg0i1bgoc] {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+
+  @media (max-width: 479px) {
+    .programming-container div[b-twg0i1bgoc] {
+      width: calc(100% - 20px);
+    }
+  }
+}

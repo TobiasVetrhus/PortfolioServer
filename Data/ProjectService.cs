@@ -1,7 +1,9 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using PortfolioServer.Data.DTO;
+using PortfolioServer.Data.Exceptions;
 using PortfolioServer.Data.Model;
+using SQLitePCL;
 
 namespace PortfolioServer.Data
 {
@@ -28,8 +30,9 @@ namespace PortfolioServer.Data
                 ProjectName = p.ProjectName,
                 ProjectDescription = p.ProjectDescription,
                 CustomerName = p.CustomerName,
-                StartDate = p.StartDate ?? DateTime.MinValue, // Handle null StartDate
-                EndDate = p.EndDate ?? DateTime.MinValue, // Handle null EndDate
+                ImageUrl = p.ImageUrl,
+                StartDate = p.StartDate,
+                EndDate = p.EndDate,
 
                 Skills = p.ProjectSkills.Select(ps => new SkillDTO
                 {
@@ -42,6 +45,47 @@ namespace PortfolioServer.Data
                     RoleDescription = pr.Role.RoleDescription
                 }).ToList()
             }).ToList();
+        }
+
+        public async Task<ProjectDTO> GetProjectByIdAsync(int projectId)
+        {
+            if(!await ProjectExistsAsync(projectId))
+                throw new EntityNotFoundException(nameof(Project), projectId);
+
+            var project = await _db.Projects
+                        .Include(p => p.ProjectSkills)
+                            .ThenInclude(ps => ps.Skill)
+                        .Include(p => p.ProjectRoles)
+                            .ThenInclude(pr => pr.Role)
+                        .FirstOrDefaultAsync();
+
+            return new ProjectDTO
+            {
+                ProjectId = project.ProjectId,
+                ProjectName = project.ProjectName,
+                ProjectDescription = project.ProjectDescription,
+                CustomerName = project.CustomerName,
+                ImageUrl = project.ImageUrl,
+                StartDate = project.StartDate,
+                EndDate = project.EndDate,
+
+                Skills = project.ProjectSkills.Select(ps => new SkillDTO
+                {
+                    SkillName = ps.Skill.SkillName
+                }).ToList(),
+
+                Roles = project.ProjectRoles.Select(pr => new RoleDTO
+                {
+                    RoleName = pr.Role.RoleName,
+                    RoleDescription = pr.Role.RoleDescription
+                }).ToList()
+            };
+        }
+
+        //Helper methods
+        public async Task<bool> ProjectExistsAsync(int id)
+        {
+            return await _db.Projects.AnyAsync(p => p.ProjectId == id);
         }
     }  
 }

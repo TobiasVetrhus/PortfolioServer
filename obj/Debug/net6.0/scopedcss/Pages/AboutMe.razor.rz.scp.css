@@ -1,0 +1,25 @@
+.info-container[b-5w57muptcr] {
+    display: flex;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: fit-content;
+    place-items: center;
+}
+
+.info-box[b-5w57muptcr] {
+    margin-left: 60px;
+}
+
+.info-header[b-5w57muptcr] {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.summary-container[b-5w57muptcr] {
+    margin-top: 20px;
+    display: flex; /* Default direction is row */
+    max-width: 900px;
+  }
+

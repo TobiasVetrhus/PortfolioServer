@@ -60,3 +60,7 @@ C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\n
 C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\PortfolioServer.csproj.CopyComplete
 C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\PortfolioServer.sourcelink.json
+C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Pages\AboutMe.razor.rz.scp.css
+C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Pages\Skills.razor.rz.scp.css
+C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Components\SkillBox.razor.rz.scp.css

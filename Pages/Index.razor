@@ -7,26 +7,46 @@
 @using PortfolioServer.Components
 
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Portfolio</PageTitle>
 
 <div class="container">
     <img src="/tobias.png" class="round-image" alt="My image" width="200" height="200"/>	
     <h1 class="main-title">Hi, I'm Tobias 👋🏼</h1>
 </div>
+<div class="container">
+    <p class="custom-paragraph">I'm a Fullstack Developer working for Experis Norway in Kristiansand, where I've expanded my knowledge
+    within fullstack development with .NET by graduating from Experis Academy 🚀 <br><br>
+    
+    Through my time at Experis I've gained experience working in small and large development teams,
+    building web-applications with different frameworks and programming languages.<br><br>
 
-@if (projects == null)
-{
-    <p>No projects..</p>
-}
-else
-{
-    <div class="card-container">
-    @foreach (var project in projects)
+    Moreover, I hold a Bachelor's degree in IT and Information Systems
+    from the University of Agder (UiA), which I completed in the spring of 2023. My passion lies in system
+    development, and I am committed to practicing and expanding my skills in programming, databases, and design.
+    Throughout my academic journey, I participated in various group projects, gaining valuable experience
+    in agile project management, diverse programming languages, database development, and service and interaction design 🎓
+    </p>
+</div>
+
+<div class="container">
+    <h1>Check out my portfolio!</h1>
+</div>
+
+<div class="container">
+    @if (projects == null)
     {
-        <Card Title="@project.ProjectName" Content="@project.ProjectDescription" />
+        <p>No projects..</p>
     }
-    </div>
-}
+    else
+    {
+        <div class="card-container">
+        @foreach (var project in projects)
+        {
+            <Card Title="@project.ProjectName" Content="@project.ProjectDescription" />
+        }
+        </div>
+    }
+</div>
 
 @code {
 

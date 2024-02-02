@@ -7,7 +7,6 @@ namespace PortfolioServer.Data.Model
         [Key]
         public int SkillId { get; set; }
         public string? SkillName { get; set; }
-
         public ICollection<ProjectSkill>? ProjectSkills { get; set; }
     }
 }

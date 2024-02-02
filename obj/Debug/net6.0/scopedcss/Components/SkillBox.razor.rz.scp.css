@@ -1,0 +1,12 @@
+.skill-card[b-310c4m88ge] {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    align-self: stretch;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+  }

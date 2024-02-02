@@ -5,6 +5,86 @@
       "PackagePath": "staticwebassets\\PortfolioServer.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\Angular.png",
+      "PackagePath": "staticwebassets\\Angular.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\Azure.png",
+      "PackagePath": "staticwebassets\\Azure.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\CSS.png",
+      "PackagePath": "staticwebassets\\CSS.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\Csharp.png",
+      "PackagePath": "staticwebassets\\Csharp.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\Docker.png",
+      "PackagePath": "staticwebassets\\Docker.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\Figma.png",
+      "PackagePath": "staticwebassets\\Figma.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\GitHub.png",
+      "PackagePath": "staticwebassets\\GitHub.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\HTML.png",
+      "PackagePath": "staticwebassets\\HTML.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\JS.png",
+      "PackagePath": "staticwebassets\\JS.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\Miro.png",
+      "PackagePath": "staticwebassets\\Miro.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\PHP.png",
+      "PackagePath": "staticwebassets\\PHP.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\PLSQL.png",
+      "PackagePath": "staticwebassets\\PLSQL.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\React.png",
+      "PackagePath": "staticwebassets\\React.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\SCRUM.png",
+      "PackagePath": "staticwebassets\\SCRUM.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\SQL.png",
+      "PackagePath": "staticwebassets\\SQL.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\SSMS.png",
+      "PackagePath": "staticwebassets\\SSMS.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\TS.png",
+      "PackagePath": "staticwebassets\\TS.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\Tailwind.png",
+      "PackagePath": "staticwebassets\\Tailwind.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\VS.png",
+      "PackagePath": "staticwebassets\\VS.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\VSC.png",
+      "PackagePath": "staticwebassets\\VSC.png"
+    },
+    {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
@@ -53,12 +133,28 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\dotnet.png",
+      "PackagePath": "staticwebassets\\dotnet.png"
+    },
+    {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\git.png",
+      "PackagePath": "staticwebassets\\git.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\jira.png",
+      "PackagePath": "staticwebassets\\jira.png"
+    },
+    {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\tobias.png",
       "PackagePath": "staticwebassets\\tobias.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\trello.png",
+      "PackagePath": "staticwebassets\\trello.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PortfolioServer.Microsoft.AspNetCore.StaticWebAssets.props",

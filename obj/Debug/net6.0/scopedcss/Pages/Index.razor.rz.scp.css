@@ -3,14 +3,11 @@
     display: flex; /* Default direction is row */
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
   }
-  
+
   .main-title[b-jkqs6sh4fi] {
     margin: 0 50px;
-  }
-  
-  .round-image[b-jkqs6sh4fi] {
-    border-radius: 50%;
   }
   
   .card-container[b-jkqs6sh4fi] {
@@ -18,4 +15,10 @@
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 20px;
   }
+
+  h1[b-jkqs6sh4fi] {
+    align-self: center;
+  }
+
+
   
