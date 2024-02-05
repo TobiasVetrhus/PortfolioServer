@@ -1,0 +1,61 @@
+@* <div class="container">
+    <div class="line"></div>
+    <div class="cert-container">
+        <h3>Microsoft Certified: Azure Fundamentals</h3>
+
+        <p>Issued by Microsoft</p>
+
+        <p>
+        Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.
+        </p>
+
+        <h4>Skills</h4>
+        <p>Azure</p>
+        <p>Cloud Data</p>
+        <p>Cloud Networking</p>
+        <p>Cloud Security</p>
+        <p>Cloud Services</p>
+        <p>Cloud Storage</p>
+        <p>Virtualization</p>
+    </div>
+</div> *@
+
+<div class="container">
+    <div class="dates">
+        <p>@ExpiresAt?.ToString("MMM yyyy")</p>
+        <p>@IssuedAt?.ToString("MMM yyyy")</p>
+    </div>
+    <div class="line"></div>
+    <div class="cert-container">
+        <h3>@Title</h3>
+        <p>Issued by @Issuer</p>
+        <p>@Description</p>
+
+        <h4>Skills</h4>
+
+        @if (Skills != null)
+        {
+            @foreach (var skill in Skills) 
+            {
+                <p>@skill</p>
+            }
+        }
+    </div>
+</div> 
+
+@code {
+    [Parameter]
+    public string? Title { get; set; }
+    [Parameter]
+    public string? Issuer { get; set; }
+    [Parameter]
+    public string? Description { get; set; }
+    [Parameter]
+    public DateTime? IssuedAt { get; set; }
+    [Parameter]
+    public DateTime? ExpiresAt { get; set; }
+    [Parameter]
+    public List<string>? Skills { get; set; } = new List<string>();
+    [Parameter]
+    public string? ImageUrl { get; set; }
+}

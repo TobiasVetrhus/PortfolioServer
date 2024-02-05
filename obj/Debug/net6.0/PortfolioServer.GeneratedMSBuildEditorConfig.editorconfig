@@ -30,21 +30,41 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-2oxnvdzmfh
 
+[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Components/Certificate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDZXJ0aWZpY2F0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-d931e4o0r9
+
 [C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Components/SkillBox.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTa2lsbEJveC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-310c4m88ge
 
-[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/AboutMe.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRNZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-5w57muptcr
+[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/About/AboutMe.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRcQWJvdXRNZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-nzq3q9rdxb
 
-[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-jkqs6sh4fi
+[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/Certificates/Certificates.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGVzXENlcnRpZmljYXRlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-5435ieq8cw
 
-[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/Skills.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2tpbGxzLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-twg0i1bgoc
+[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/CV/CV.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ1ZcQ1YucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hy89jytuwz
+
+[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/Portfolio/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGZvbGlvXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-8xfjdoezj6
+
+[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/ProjectDetails/ProjectDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdERldGFpbHNcUHJvamVjdERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9acy078g7x
+
+[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/Projects/MyProjects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHNcTXlQcm9qZWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-p4yp5x6wf0
+
+[C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Pages/Skills/Skills.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2tpbGxzXFNraWxscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-9l2b1y8ehd
 
 [C:/Users/TVetrh/source/repos/TobiasVetrhus/Portfolio/PortfolioServer/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

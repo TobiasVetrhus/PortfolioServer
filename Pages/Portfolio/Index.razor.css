@@ -9,12 +9,6 @@
   .main-title {
     margin: 0 50px;
   }
-  
-  .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-  }
 
   h1 {
     align-self: center;

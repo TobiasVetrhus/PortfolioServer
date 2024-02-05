@@ -14,6 +14,7 @@ namespace PortfolioServer.Data
                     ProjectName = "Digital Speed Interview",
                     ProjectDescription = "Digitalization of speed interview days held by Experis.",
                     CustomerName = "Experis",
+                    CustomerSector = "Webapp Development",
                     StartDate = new DateTime(2023, 11, 1),
                     EndDate = new DateTime(2024, 2, 1)
                 },
@@ -23,6 +24,7 @@ namespace PortfolioServer.Data
                     ProjectName = "Humans VS Zombies",
                     ProjectDescription = "Game management system for Humans VS Zombies.",
                     CustomerName = "Noroff Accelerate",
+                    CustomerSector = "Webapp Development",
                     StartDate = new DateTime(2023, 9, 1),
                     EndDate = new DateTime(2023, 11, 1)
                 },
@@ -32,6 +34,7 @@ namespace PortfolioServer.Data
                     ProjectName = "Success criteria for implementing No-Code AI in industrial companies.",
                     ProjectDescription = "Bachelor thesis in coperation with Intelecy, AIhub and collaborating industrial companies. The project included interviews and workshops to find barriers in industries abilities to adopt AI technologies like No-Code. The group also helped Vianode with data analysis of process data.",
                     CustomerName = "Intelecy, AIhub & Vianode",
+                    CustomerSector = "Industrial AI",
                     StartDate = new DateTime(2023, 1, 1),
                     EndDate = new DateTime(2023, 6, 1)
                 }

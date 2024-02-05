@@ -1,12 +1,22 @@
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+
 <div class="card">
     <h2>@Title</h2>
     <p>@Content</p>
+    <button @onclick="() => ShowProjectDetails(ProjectId)">See Details</button>
 </div>
 
 @code {
     [Parameter]
     public string? Title { get; set; }
-
     [Parameter]
     public string? Content { get; set; }
+    [Parameter]
+    public int ProjectId {get; set;}
+
+    private void ShowProjectDetails(int projectId)
+    {
+        NavigationManager.NavigateTo($"/project-details/{projectId}");
+    }
 }

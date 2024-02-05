@@ -1,9 +1,8 @@
 ﻿@page "/"
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
-@using PortfolioServer.Data
+@using PortfolioServer.Data.DTO
 @using PortfolioServer.Data.Model
-@inject ProjectService ProjectSvc
 @using PortfolioServer.Components
 
 
@@ -42,21 +41,20 @@
         <div class="card-container">
         @foreach (var project in projects)
         {
-            <Card Title="@project.ProjectName" Content="@project.ProjectDescription" />
+            <Card Title="@project.ProjectName" Content="@project.ProjectDescription" ProjectId="@project.ProjectId" />
         }
         </div>
     }
 </div>
 
 @code {
-
-    List<Project> projects = new List<Project>();
+    List<ProjectDTO> projects = new List<ProjectDTO>();
 
     protected override async Task OnInitializedAsync() 
     {
         try
         {
-            projects = await HttpClient.GetFromJsonAsync<List<Project>>(NavigationManager.BaseUri + "projects");
+            projects = await HttpClient.GetFromJsonAsync<List<ProjectDTO>>(NavigationManager.BaseUri + "projects");
 
         }
         catch (Exception ex)

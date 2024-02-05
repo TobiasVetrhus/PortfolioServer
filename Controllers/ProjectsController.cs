@@ -19,10 +19,17 @@ namespace PortfolioServer.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Project>>> GetProjects() 
+        public async Task<ActionResult<IEnumerable<ProjectDTO>>> GetProjects() 
         {
             var projects = await _projectService.GetProjectsAsync();
             return Ok(projects);
+        }
+
+        [HttpGet("{projectId}")]
+        public async Task<ActionResult<ProjectDTO>> GetProject(int projectId)
+        {
+            var project = await _projectService.GetProjectByIdAsync(projectId);
+            return Ok(project);
         }
     }
 }

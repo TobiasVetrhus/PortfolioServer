@@ -1,0 +1,89 @@
+.project-card {
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    min-width: 600px;
+    max-width: 800px;
+    width: fit-content;
+}
+
+.line {
+    width: 6px;
+    background-color: #ac1616;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.role-line {
+    width: 3px;
+    background-color: #e37f7f; 
+    border-radius: 50px;
+}
+
+.dates {
+    margin-right: 6px;
+}
+
+.dates p {
+    margin: 0; /* Remove default margin */
+    font-size: smaller;
+    color: darkslategray;
+}
+
+.customer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: fit-content;
+    border-left: 4px solid #ac1616;
+    border-top: 1px solid #f0cccc;
+    border-right: 1px solid #f0cccc;
+    border-bottom: 1px solid #f0cccc;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.customer-sector {
+    font-size: medium;
+    color: grey;
+    padding-left: 5px;
+}
+
+.role-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 375px;
+}
+
+.container {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .project-card {
+        width: fit-content;
+        min-width: auto;
+    }
+}

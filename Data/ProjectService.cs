@@ -57,7 +57,7 @@ namespace PortfolioServer.Data
                             .ThenInclude(ps => ps.Skill)
                         .Include(p => p.ProjectRoles)
                             .ThenInclude(pr => pr.Role)
-                        .FirstOrDefaultAsync();
+                        .FirstOrDefaultAsync(p => p.ProjectId == projectId);;
 
             return new ProjectDTO
             {
@@ -65,6 +65,7 @@ namespace PortfolioServer.Data
                 ProjectName = project.ProjectName,
                 ProjectDescription = project.ProjectDescription,
                 CustomerName = project.CustomerName,
+                CustomerSector = project.CustomerSector,
                 ImageUrl = project.ImageUrl,
                 StartDate = project.StartDate,
                 EndDate = project.EndDate,

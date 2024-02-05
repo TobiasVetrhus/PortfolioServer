@@ -1,0 +1,74 @@
+@page "/project-details/{ProjectId}"
+
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+@using PortfolioServer.Data.DTO
+@using PortfolioServer.Data.Model
+
+@if (selectedProject != null)
+{
+    <div class="container">
+        <div class="dates">
+            <p>@selectedProject.EndDate?.ToString("MMM yyyy")</p>
+            <p>@selectedProject.StartDate?.ToString("MMM yyyy")</p>
+        </div>
+        <div class="line"></div>
+        <div class="project-card">
+            <h2>@selectedProject.CustomerName</h2>
+            <p class="customer">
+                @selectedProject.ProjectName <span class="customer-sector">| @selectedProject.CustomerSector</span>
+            </p>
+            <p>@selectedProject.ProjectDescription</p>
+
+                @foreach (var role in selectedProject.Roles)
+                {
+                    <div class="container">
+                        <div class="role-line"></div>
+                        <div class="role-container">
+                            <strong>@role.RoleName</strong>
+                            <p>@role.RoleDescription</p>
+                        </div>
+                    </div>
+                    <br>
+
+                }
+                <hr>
+                <div class="skills-container">
+                @foreach (var skill in selectedProject.Skills)
+                {
+                        <div class="skill-card">
+                            @skill.SkillName
+                        </div>
+                }
+                </div>
+        </div>
+    </div>
+}
+
+@code {
+
+    [Parameter]
+    public string ProjectId { get; set; } // Change ProjectId to string
+    private ProjectDTO selectedProject;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            if (int.TryParse(ProjectId, out int projectId))
+            {
+                selectedProject = await HttpClient.GetFromJsonAsync<ProjectDTO>(NavigationManager.BaseUri + "projects/" + ProjectId);
+            }
+            else
+            {
+                // Handle the case where ProjectId is not a valid integer
+                Console.WriteLine($"Invalid ProjectId: {ProjectId}");
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle the exception, log, or display an error message
+            Console.WriteLine($"Error fetching project details: {ex.Message}");
+        }
+    }
+}

@@ -1,5 +1,6 @@
 /* _content/PortfolioServer/Components/Card.razor.rz.scp.css */
 .card[b-2oxnvdzmfh] {
+    position: relative;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -15,7 +16,42 @@
   .card p[b-2oxnvdzmfh] {
     font-size: 1rem;
     color: #555555;
+    margin-bottom: 90px;
   }
+
+  .card button[b-2oxnvdzmfh] {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 15px;
+    padding: 13px;
+    max-width: 130px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+/* _content/PortfolioServer/Components/Certificate.razor.rz.scp.css */
+.cert-container[b-d931e4o0r9] {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1000px;
+}
+
+.container[b-d931e4o0r9] {
+    display: flex;
+}
+
+.line[b-d931e4o0r9] {
+    width: 6px;
+    background-color: #217dc0;
+    border-radius: 50px;
+    margin-right: 20px;
+}
 /* _content/PortfolioServer/Components/SkillBox.razor.rz.scp.css */
 .skill-card[b-310c4m88ge] {
     padding-top: 5px;
@@ -29,34 +65,65 @@
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
   }
-/* _content/PortfolioServer/Pages/AboutMe.razor.rz.scp.css */
-.info-container[b-5w57muptcr] {
+/* _content/PortfolioServer/Pages/About/AboutMe.razor.rz.scp.css */
+.info-container[b-nzq3q9rdxb] {
     display: flex;
     padding: 15px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-width: fit-content;
     place-items: center;
+    max-width: fit-content;
 }
 
-.info-box[b-5w57muptcr] {
-    margin-left: 60px;
+.info-box[b-nzq3q9rdxb] {
+    margin-left: 50px;
 }
 
-.info-header[b-5w57muptcr] {
+.info-header[b-nzq3q9rdxb] {
     font-size: medium;
     font-weight: bold;
 }
 
-.summary-container[b-5w57muptcr] {
+.summary-container[b-nzq3q9rdxb] {
     margin-top: 20px;
-    display: flex; /* Default direction is row */
+    display: flex;
     max-width: 900px;
   }
 
-/* _content/PortfolioServer/Pages/Index.razor.rz.scp.css */
-.container[b-jkqs6sh4fi] {
+  @media (max-width: 920px) {
+    .info-container[b-nzq3q9rdxb] {
+        padding: 10px;
+    }
+
+    .info-header[b-nzq3q9rdxb] {
+        font-size: small;
+    }
+
+    .info-box[b-nzq3q9rdxb] {
+        font-size: small;
+        margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .info-container[b-nzq3q9rdxb] {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-box[b-nzq3q9rdxb] {
+        margin-left: 0;
+    }
+
+    .summary-container[b-nzq3q9rdxb] {
+        font-size: small;
+    }
+  }
+/* _content/PortfolioServer/Pages/Certificates/Certificates.razor.rz.scp.css */
+/* _content/PortfolioServer/Pages/CV/CV.razor.rz.scp.css */
+/* _content/PortfolioServer/Pages/Portfolio/Index.razor.rz.scp.css */
+.container[b-8xfjdoezj6] {
     margin-top: 20px;
     display: flex; /* Default direction is row */
     justify-content: center;
@@ -64,24 +131,109 @@
     max-width: 1000px;
   }
 
-  .main-title[b-jkqs6sh4fi] {
+  .main-title[b-8xfjdoezj6] {
     margin: 0 50px;
   }
-  
-  .card-container[b-jkqs6sh4fi] {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-  }
 
-  h1[b-jkqs6sh4fi] {
+  h1[b-8xfjdoezj6] {
     align-self: center;
   }
 
 
   
-/* _content/PortfolioServer/Pages/Skills.razor.rz.scp.css */
-.container[b-twg0i1bgoc] {
+/* _content/PortfolioServer/Pages/ProjectDetails/ProjectDetails.razor.rz.scp.css */
+.project-card[b-9acy078g7x] {
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    min-width: 600px;
+    max-width: 800px;
+    width: fit-content;
+}
+
+.line[b-9acy078g7x] {
+    width: 6px;
+    background-color: #ac1616;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.role-line[b-9acy078g7x] {
+    width: 3px;
+    background-color: #e37f7f; 
+    border-radius: 50px;
+}
+
+.dates[b-9acy078g7x] {
+    margin-right: 6px;
+}
+
+.dates p[b-9acy078g7x] {
+    margin: 0; /* Remove default margin */
+    font-size: smaller;
+    color: darkslategray;
+}
+
+.customer[b-9acy078g7x] {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skills-container[b-9acy078g7x] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-card[b-9acy078g7x] {
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: fit-content;
+    border-left: 4px solid #ac1616;
+    border-top: 1px solid #f0cccc;
+    border-right: 1px solid #f0cccc;
+    border-bottom: 1px solid #f0cccc;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.customer-sector[b-9acy078g7x] {
+    font-size: medium;
+    color: grey;
+    padding-left: 5px;
+}
+
+.role-container[b-9acy078g7x] {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 375px;
+}
+
+.container[b-9acy078g7x] {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .project-card[b-9acy078g7x] {
+        width: fit-content;
+        min-width: auto;
+    }
+}
+/* _content/PortfolioServer/Pages/Projects/MyProjects.razor.rz.scp.css */
+/* _content/PortfolioServer/Pages/Skills/Skills.razor.rz.scp.css */
+.container[b-9l2b1y8ehd] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,19 +241,19 @@
 }
 
 @media (max-width: 767px) {
-  .programming-container[b-twg0i1bgoc] {
+  .programming-container[b-9l2b1y8ehd] {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
   }
 
-  .programming-container div[b-twg0i1bgoc] {
+  .programming-container div[b-9l2b1y8ehd] {
     width: calc(50% - 20px);
     margin: 10px;
   }
 
   @media (max-width: 479px) {
-    .programming-container div[b-twg0i1bgoc] {
+    .programming-container div[b-9l2b1y8ehd] {
       width: calc(100% - 20px);
     }
   }

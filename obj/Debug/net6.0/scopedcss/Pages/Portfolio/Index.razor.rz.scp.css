@@ -1,0 +1,18 @@
+.container[b-8xfjdoezj6] {
+    margin-top: 20px;
+    display: flex; /* Default direction is row */
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+  }
+
+  .main-title[b-8xfjdoezj6] {
+    margin: 0 50px;
+  }
+
+  h1[b-8xfjdoezj6] {
+    align-self: center;
+  }
+
+
+  
