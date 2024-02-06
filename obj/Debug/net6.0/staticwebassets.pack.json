@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\Miro.png"
     },
     {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\Noroff.png",
+      "PackagePath": "staticwebassets\\Noroff.png"
+    },
+    {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\PHP.png",
       "PackagePath": "staticwebassets\\PHP.png"
     },
@@ -83,6 +87,10 @@
     {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\VSC.png",
       "PackagePath": "staticwebassets\\VSC.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\background.jpg",
+      "PackagePath": "staticwebassets\\background.jpg"
     },
     {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -137,6 +145,10 @@
       "PackagePath": "staticwebassets\\dotnet.png"
     },
     {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\experis_cross.png",
+      "PackagePath": "staticwebassets\\experis_cross.png"
+    },
+    {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -145,8 +157,36 @@
       "PackagePath": "staticwebassets\\git.png"
     },
     {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\intelecy.png",
+      "PackagePath": "staticwebassets\\intelecy.png"
+    },
+    {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\jira.png",
       "PackagePath": "staticwebassets\\jira.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\Azure Fundamentals.pdf",
+      "PackagePath": "staticwebassets\\pdf\\Azure Fundamentals.pdf"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\Core DevOps Skills.pdf",
+      "PackagePath": "staticwebassets\\pdf\\Core DevOps Skills.pdf"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\Enterprise Developer to Full Stack Developer.pdf",
+      "PackagePath": "staticwebassets\\pdf\\Enterprise Developer to Full Stack Developer.pdf"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\Fullstack Development with .NET.pdf",
+      "PackagePath": "staticwebassets\\pdf\\Fullstack Development with .NET.pdf"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\Working  with Microsoft Azure SQL.pdf",
+      "PackagePath": "staticwebassets\\pdf\\Working  with Microsoft Azure SQL.pdf"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\skillsoft.png",
+      "PackagePath": "staticwebassets\\skillsoft.png"
     },
     {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\tobias.png",
@@ -155,6 +195,10 @@
     {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\trello.png",
       "PackagePath": "staticwebassets\\trello.png"
+    },
+    {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\zombie.png",
+      "PackagePath": "staticwebassets\\zombie.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PortfolioServer.Microsoft.AspNetCore.StaticWebAssets.props",

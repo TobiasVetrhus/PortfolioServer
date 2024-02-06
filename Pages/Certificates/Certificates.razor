@@ -1,13 +1,73 @@
 @page "/certificates"
 @using PortfolioServer.Components
 
-<h1>My Certificates</h1>
+<PageTitle>Certificates</PageTitle>
 
+<h1 class="title">My Certificates</h1>
 
-<Certificate 
-    Title="Microsoft Certified: Azure Fundamentals"
-    Issuer="Microsoft"
-    Description="Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure."
-    IssuedAt="2023-11-08"
-    Skills=@new List<string> { "Azure", "Cloud Data", "Cloud Networking", "Cloud Security", "Cloud Services", "Cloud Storage", "Virtualization" }
-/>
+<div class="certificates">
+    <Certificate
+        Title="Core DevOps Skills"
+        Issuer="Skillsoft"
+        Description="I have learned fundamental DevOps practices, both in cloud and on-premise platforms, as well as other tools. I have gained knowledge about CI/CD pipelines and automation routines. Additionally, I have familiarized myself with technologies like Chef, Jenkins, and Ansible, and finally, how cloud solutions like Azure, AWS, and Google Cloud implement DevOps."
+        IssuedAt='DateTime.Parse("2024-01-07")'
+        Skills='new List<string> { "CI/CD", "Azure", "DevOps", "Automation"}'
+        PdfUrl="pdf/Core DevOps Skills.pdf"
+        ImageUrl="/skillsoft.png"
+        BorderColorLeft="black"
+        BorderColor="#9d9fa3"
+        LineColor="black"
+    />
+
+    <Certificate
+        Title="Working with Microsoft Azure SQL"
+        Issuer="Skillsoft"
+        Description="I have learned how to set up and use an Azure SQL database, as well as other advanced functionalities like transactions and security. Additionally, I have learned how to track data changes and query performance."
+        IssuedAt='DateTime.Parse("2023-11-24")'
+        Skills='new List<string> { "SQL", "Azure", "Azure Data Studio"}'
+        PdfUrl="pdf/Working  with Microsoft Azure SQL.pdf"
+        ImageUrl="/skillsoft.png"
+        BorderColorLeft="black"
+        BorderColor="#9d9fa3"
+        LineColor="black"
+    />
+
+    <Certificate
+        Title="Enterprise Developer to Full Stack Developer"
+        Issuer="Skillsoft"
+        Description="The certification process has provided me with basic knowledge of full-stack development, and I have become familiar with various technology stacks like MEAN and MERN, programming languages including JavaScript, as well as the use of jQuery, various types of databases, CI/CD pipelines, and more."
+        IssuedAt='DateTime.Parse("2023-11-23")'
+        Skills='new List<string> { "React", "Angular", "MERN Stack", "MEAN Stack", "SQL", "PostgreSQL", "Design", "CI/CD", "Microsoft SQL Server", "Java", "Node.js", "jQuery", "NoSQL", "RESTful API", "HTML", "CSS"}'
+        PdfUrl="/pdf/Enterprise Developer to Full Stack Developer.pdf"
+        ImageUrl="/skillsoft.png"
+        BorderColorLeft="black"
+        BorderColor="#9d9fa3"
+        LineColor="black"
+    />
+
+    <Certificate
+        Title="AZ-900 Microsoft Azure Fundamentals"
+        Issuer="Microsoft"
+        Description="Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure."
+        IssuedAt='DateTime.Parse("2023-11-08")'
+        Skills='new List<string> { "Azure", "Cloud Data", "Cloud Networking", "Cloud Security", "Cloud Services", "Cloud Storage", "Virtualization" }'
+        PdfUrl="pdf/Azure Fundamentals.pdf"
+        ImageUrl="/Azure.png"
+        BorderColorLeft="#4b91bd"
+        BorderColor="#8cbede"
+        LineColor="#4b91bd"
+    />
+
+    <Certificate
+        Title="Full-stack Development With .NET"
+        Issuer="Noroff"
+        Description="After a 3 month period, I graduated from Experis academy having completed a full-stack .NET bootcamp. During this period of accelerated learning, I have completed several assignments and tasks, enhancing my compentence in many areas."
+        IssuedAt='DateTime.Parse("2023-10-27")'
+        Skills='new List<string> { "React", "Angular", "Data modelling", "SQL", ".NET", "Design", "CI/CD", "C# OOP", "ASP.NET Core Web API", "Microsoft SQL Server", "Node.js", "TypeScript", "JavaScript", "RESTful API", "HTML", "CSS", "Docker", "Entity Framework Core 6", "Software Development Methodology", "Keycloak" }'
+        PdfUrl="pdf/Fullstack Development with .NET.pdf"
+        ImageUrl="/Noroff.png"
+        BorderColorLeft="#e36a19"
+        BorderColor="#e0ac89"
+        LineColor="#e36a19"
+    />
+</div>

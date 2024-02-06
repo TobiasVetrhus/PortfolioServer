@@ -67,5 +67,5 @@ C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\n
 C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Pages\Projects\MyProjects.razor.rz.scp.css
 C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Pages\CV\CV.razor.rz.scp.css
 C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Pages\Certificates\Certificates.razor.rz.scp.css
-C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Pages\ProjectDetails\ProjectDetails.razor.rz.scp.css
 C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Components\Certificate.razor.rz.scp.css
+C:\Users\TVetrh\source\repos\TobiasVetrhus\Portfolio\PortfolioServer\obj\Debug\net6.0\scopedcss\Pages\ProjectDetails\ProjectDetails.razor.rz.scp.css

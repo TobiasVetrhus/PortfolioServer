@@ -7,6 +7,8 @@
 
 @if (selectedProject != null)
 {
+    <PageTitle>@selectedProject.ProjectName</PageTitle>
+
     <div class="container">
         <div class="dates">
             <p>@selectedProject.EndDate?.ToString("MMM yyyy")</p>
@@ -14,6 +16,7 @@
         </div>
         <div class="line"></div>
         <div class="project-card">
+            <div class="project-card-image" style="background-image: url('@selectedProject.ImageUrl')"></div>
             <h2>@selectedProject.CustomerName</h2>
             <p class="customer">
                 @selectedProject.ProjectName <span class="customer-sector">| @selectedProject.CustomerSector</span>
@@ -25,7 +28,7 @@
                     <div class="container">
                         <div class="role-line"></div>
                         <div class="role-container">
-                            <strong>@role.RoleName</strong>
+                            <h6>@role.RoleName</h6>
                             <p>@role.RoleDescription</p>
                         </div>
                     </div>
@@ -36,20 +39,25 @@
                 <div class="skills-container">
                 @foreach (var skill in selectedProject.Skills)
                 {
-                        <div class="skill-card">
+                        <p class="skill-card">
                             @skill.SkillName
-                        </div>
+                        </p>
                 }
-                </div>
+            </div>
         </div>
     </div>
 }
 
 @code {
-
     [Parameter]
-    public string ProjectId { get; set; } // Change ProjectId to string
+    public string ProjectId { get; set; }
     private ProjectDTO selectedProject;
+    [Parameter]
+    public string? BorderColor { get; set; } 
+    [Parameter]
+    public string? BorderColorLeft { get; set; } 
+    [Parameter]
+    public string? LineColor { get; set; } 
 
     protected override async Task OnInitializedAsync()
     {

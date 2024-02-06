@@ -2,19 +2,141 @@
   display: flex;
   flex-direction: column;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-container-image {
+  position: absolute;
+  top: 0;
+  left: 600px;
+  width: 40%;
+  height: 100%;
+  background-size: cover; /* Adjust background image size */
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5; /* Adjust opacity of background image */
+  z-index: -1; /* Ensure background is behind other content */
+  border-radius: inherit; /* Inherit border radius from parent */
+}
+
+.skill-card {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  width: fit-content;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  margin-bottom: 25px;
 }
 
 .container {
   display: flex;
+  margin: 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .line {
-  width: 6px;
-  background-color: #217dc0;
+  min-width: 6px;
   border-radius: 50px;
   margin-right: 20px;
+}
+
+.dates {
+  padding-right: 6px;
+}
+
+.dates p {
+  margin: 0; /* Remove default margin */
+  font-size: smaller;
+  color: darkslategray;
+  white-space: nowrap;
+}
+
+.title-container button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-size: x-small;
+  border: grey solid 1px;
+  margin-top: -7px;
+  margin-right: -7px;
+  max-height: 27px;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 115px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s ease; 
+}
+
+.button-span {
+  font-family: Trebuchet MS, sans-serif;
+  padding-left: 3px;
+}
+
+.title-container button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .cert-container-image {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .dates p {
+    font-size: xx-small;
+  }
+
+  .title-container button {
+    font-size: xx-small;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 100px;
+  }
+
+  .cert-container h3 {
+    font-size: medium;
+    font-weight: bolder;
+  }
+
+  .cert-container p {
+    font-size: small;
+  }
+
+  .title-container h3 {
+    max-width: 200px;
+  }
+
+  .line {
+    min-width: 4px;
+  }
 }

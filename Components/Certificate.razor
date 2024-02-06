@@ -1,47 +1,46 @@
-@* <div class="container">
-    <div class="line"></div>
-    <div class="cert-container">
-        <h3>Microsoft Certified: Azure Fundamentals</h3>
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+@using Microsoft.JSInterop
 
-        <p>Issued by Microsoft</p>
+<div class="wrapper">
+    <div class="container">
+        <div class="dates">
+            <p>@ExpiresAt?.ToString("dd.MM.yyyy")</p>
+            <p>@IssuedAt?.ToString("dd.MM.yyyy")</p>
+        </div>
+        <div class="line" style="background-color: @LineColor;"></div>
+        <div class="cert-container">
+            <div class="cert-container-image" style="background-image: url('@ImageUrl')"></div>
+            <div class="title-container">
+                <h3>@Title</h3>
+                <button class="oi oi-badge" @onclick="() => OpenPDF(PdfUrl)">
+                   <span class="badge oi oi-badge"></span>
+                   <span class="button-span">View Certificate</span>
+                </button>
+            </div>
+            <p>Issued by @Issuer</p>
+            <p>@Description</p>
 
-        <p>
-        Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.
-        </p>
-
-        <h4>Skills</h4>
-        <p>Azure</p>
-        <p>Cloud Data</p>
-        <p>Cloud Networking</p>
-        <p>Cloud Security</p>
-        <p>Cloud Services</p>
-        <p>Cloud Storage</p>
-        <p>Virtualization</p>
-    </div>
-</div> *@
-
-<div class="container">
-    <div class="dates">
-        <p>@ExpiresAt?.ToString("MMM yyyy")</p>
-        <p>@IssuedAt?.ToString("MMM yyyy")</p>
-    </div>
-    <div class="line"></div>
-    <div class="cert-container">
-        <h3>@Title</h3>
-        <p>Issued by @Issuer</p>
-        <p>@Description</p>
-
-        <h4>Skills</h4>
-
-        @if (Skills != null)
-        {
-            @foreach (var skill in Skills) 
+            <hr>
+            <div class="skills-container">
+            @if (Skills != null)
             {
-                <p>@skill</p>
+                @foreach (var skill in Skills) 
+                {
+                    <p 
+                    class="skill-card" 
+                    style="border-left: 4px solid @BorderColorLeft; 
+                           border-right: 1px solid @BorderColor; 
+                           border-bottom: 1px solid @BorderColor;
+                           border-top: 1px solid @BorderColor;">
+                    @skill</p>
+                }
             }
-        }
-    </div>
-</div> 
+            </div>
+        </div>
+    </div> 
+</div>
+
 
 @code {
     [Parameter]
@@ -55,7 +54,24 @@
     [Parameter]
     public DateTime? ExpiresAt { get; set; }
     [Parameter]
-    public List<string>? Skills { get; set; } = new List<string>();
+    public List<string>? Skills { get; set; }
     [Parameter]
     public string? ImageUrl { get; set; }
+    [Parameter]
+    public string? PdfUrl { get; set; }
+    [Parameter]
+    public string? BorderColorLeft { get; set; }
+    [Parameter]
+    public string? BorderColor { get; set; }
+    [Parameter]
+    public string? LineColor { get; set; }
+
+    [Inject]
+    private IJSRuntime JSRuntime { get; set; }
+
+    private async Task OpenPDF(string pdfUrl)
+    {
+        var absoluteUrl = NavigationManager.ToAbsoluteUri(pdfUrl).ToString();
+        await JSRuntime.InvokeVoidAsync("open", absoluteUrl, "_blank");
+    }
 }
