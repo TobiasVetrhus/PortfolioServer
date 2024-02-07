@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pgVevjku85NTfnzTu5DNqtRDWMhgFs4IXd4RmJoA7j4=",
+  "Hash": "1iVHWXlJGWKvkVD4rQMGnN8cB71Is9Ie6FlRJdDQ8hw=",
   "Source": "PortfolioServer",
   "BasePath": "_content/PortfolioServer",
   "Mode": "Default",
@@ -661,6 +661,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\pdf\\Core DevOps Skills.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\CV.pdf",
+      "SourceId": "PortfolioServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\",
+      "BasePath": "_content/PortfolioServer",
+      "RelativePath": "pdf/CV.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pdf\\CV.pdf"
     },
     {
       "Identity": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\Enterprise Developer to Full Stack Developer.pdf",

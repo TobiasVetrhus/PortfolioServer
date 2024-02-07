@@ -1,43 +1,103 @@
+.navbar-container[b-g4tl63h13v] {
+  background-color: #0b090a;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1000;
+}
+
 .navbar[b-g4tl63h13v] {
-    background-color: white;
-    padding: 10px 20px;
-    position: sticky;
+  display: flex;
+  flex-direction: column;
+  width: fit-content; 
+  align-items: baseline;
+}
+
+.nav-item[b-g4tl63h13v] {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.nav-item[b-g4tl63h13v]  .nav-link {
+  color: rgb(175, 173, 173);
+  background: none;
+  border: none;
+  border-radius: 4px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  line-height: 1rem;
+  width: 100%; 
+}
+
+.nav-item[b-g4tl63h13v]  a.active {
+  background-color: #e5383b;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-item[b-g4tl63h13v]  .nav-link:hover {
+  background-color: rgba(229, 56, 59, 0.3);
+  color: white;
+}
+
+.hamburger-menu[b-g4tl63h13v] {
+  display: none;
+}
+
+.menu-items[b-g4tl63h13v] {
+  display: none;
+  background-color: #0b090a;
+  opacity: 0.93;
+  width: fit-content;
+  padding: 7px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 10px 0;
+  z-index: 1000;
+}
+
+.menu-items .nav-item:first-child[b-g4tl63h13v] {
+    margin-top: 50px; /* Adjust this value as needed */
+}
+
+.menu-items ul[b-g4tl63h13v] {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bar[b-g4tl63h13v] {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ba181b;
+  margin: 5px 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-container[b-g4tl63h13v] {
+    display: none;
+  }
+
+  .hamburger-menu[b-g4tl63h13v] {
+    position: fixed;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .nav-item[b-g4tl63h13v] {
-    font-size: 1.1rem;
-  }
-  
-  .nav-item[b-g4tl63h13v]  .nav-link {
-    color: darkgray;
-    background: none;
-    border: none;
-    border-radius: 4px;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    line-height: 3rem;
-    width: 100%;
-  }
-  
-  .nav-item[b-g4tl63h13v]  a.active {
-    background-color: rgba(255, 255, 255, 0.37);
+    left: 0;
+    margin-left: 10px;
+    margin-top:  10px;
     color: black;
-    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1001;
   }
-  
-  .nav-item[b-g4tl63h13v]  .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: black;
-  }
-  
-  .content[b-g4tl63h13v] {
-    padding: 20px;
-    margin-top: 40px;
-  }
+}
+
+
+
+
+

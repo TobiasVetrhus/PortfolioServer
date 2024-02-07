@@ -3,7 +3,7 @@
     display: flex; /* Default direction is row */
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1500px;
   }
 
   .main-title[b-8xfjdoezj6] {
@@ -15,4 +15,17 @@
   }
 
 
-  
+  @media (max-width: 767px) {
+    .container[b-8xfjdoezj6] {
+      flex-wrap: wrap;
+    }
+
+    .round-image[b-8xfjdoezj6] {
+      width: 150px;
+      height: 150px;
+    }
+
+    .main-title[b-8xfjdoezj6] {
+      margin-top: 20px;
+    }
+  }

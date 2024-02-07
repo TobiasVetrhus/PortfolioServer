@@ -1,3 +1,12 @@
+.container[b-nzq3q9rdxb] {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
 .info-container[b-nzq3q9rdxb] {
     margin-top: 15px;
     align-self: baseline;
@@ -9,14 +18,16 @@
 }
 
 .background-image[b-nzq3q9rdxb] {
-    border: lightgrey 1px solid;
-    border-radius: 10px 10px 0 0;
     top: 0;
     position: absolute;
     width: 100%;
     max-height: 50%;
     object-fit: cover;
     z-index: -1;
+}
+
+.span-grey[b-nzq3q9rdxb] {
+    color: grey;
 }
 
 .profile-image[b-nzq3q9rdxb] {
@@ -29,48 +40,40 @@
 
 .profile-container[b-nzq3q9rdxb] {
     position: relative;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: -2;
+    border: #a4161a 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.secondary-container[b-nzq3q9rdxb] {
+    height: fit-content;
+    padding: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    z-index: -2;
-    margin-left: 100px;
-    margin-right: 100px;
-    border: lightgrey 1px solid;
+    border: #a4161a 1px solid;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     border-radius: 10px;
-}
-
-.summary-container[b-nzq3q9rdxb] {
-    margin-top: 20px;
-    display: flex;
-    max-width: 900px;
+    width: 100%
   }
 
-  @media (max-width: 920px) {
-    .info-container[b-nzq3q9rdxb] {
-        padding: 10px;
+  @media (max-width: 770px) {
+    .container h3[b-nzq3q9rdxb] {
+        font-size: large;
     }
 
-    .info-header[b-nzq3q9rdxb] {
-        font-size: small;
-    }
-
-    .info-box[b-nzq3q9rdxb] {
-        font-size: small;
-        margin-left: 20px;
-    }
-  }
-
-  @media (max-width: 767px) {
-
-    .profile-container[b-nzq3q9rdxb] {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .summary-container[b-nzq3q9rdxb] {
+    .container p[b-nzq3q9rdxb] {
         font-size: small;
     }
   }

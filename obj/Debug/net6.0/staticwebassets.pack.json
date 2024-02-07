@@ -169,6 +169,10 @@
       "PackagePath": "staticwebassets\\pdf\\Azure Fundamentals.pdf"
     },
     {
+      "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\CV.pdf",
+      "PackagePath": "staticwebassets\\pdf\\CV.pdf"
+    },
+    {
       "Id": "C:\\Users\\TVetrh\\source\\repos\\TobiasVetrhus\\Portfolio\\PortfolioServer\\wwwroot\\pdf\\Core DevOps Skills.pdf",
       "PackagePath": "staticwebassets\\pdf\\Core DevOps Skills.pdf"
     },

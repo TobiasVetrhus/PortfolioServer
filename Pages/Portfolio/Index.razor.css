@@ -3,7 +3,7 @@
     display: flex; /* Default direction is row */
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1500px;
   }
 
   .main-title {
@@ -15,4 +15,17 @@
   }
 
 
-  
+  @media (max-width: 767px) {
+    .container {
+      flex-wrap: wrap;
+    }
+
+    .round-image {
+      width: 150px;
+      height: 150px;
+    }
+
+    .main-title {
+      margin-top: 20px;
+    }
+  }

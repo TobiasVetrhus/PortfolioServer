@@ -1,3 +1,12 @@
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
 .info-container {
     margin-top: 15px;
     align-self: baseline;
@@ -9,14 +18,16 @@
 }
 
 .background-image {
-    border: lightgrey 1px solid;
-    border-radius: 10px 10px 0 0;
     top: 0;
     position: absolute;
     width: 100%;
     max-height: 50%;
     object-fit: cover;
     z-index: -1;
+}
+
+.span-grey {
+    color: grey;
 }
 
 .profile-image {
@@ -29,48 +40,40 @@
 
 .profile-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: -2;
+    border: #a4161a 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.secondary-container {
+    height: fit-content;
+    padding: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    z-index: -2;
-    margin-left: 100px;
-    margin-right: 100px;
-    border: lightgrey 1px solid;
+    border: #a4161a 1px solid;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     border-radius: 10px;
-}
-
-.summary-container {
-    margin-top: 20px;
-    display: flex;
-    max-width: 900px;
+    width: 100%
   }
 
-  @media (max-width: 920px) {
-    .info-container {
-        padding: 10px;
+  @media (max-width: 770px) {
+    .container h3 {
+        font-size: large;
     }
 
-    .info-header {
-        font-size: small;
-    }
-
-    .info-box {
-        font-size: small;
-        margin-left: 20px;
-    }
-  }
-
-  @media (max-width: 767px) {
-
-    .profile-container {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .summary-container {
+    .container p {
         font-size: small;
     }
   }
